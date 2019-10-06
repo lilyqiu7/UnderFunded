@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html>
+<title>Underfunded: Home</title>
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -23,6 +24,7 @@
 	.fa-bars:hover {
 		color: white !important;
 	}
+
 	.sidenav {
   height: 100%; /* 100% Full-height */
   width: 0; /* 0 width - change this with JavaScript */
@@ -35,6 +37,7 @@
   padding-top: 60px; /* Place content 60px from the top */
   transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
 }
+
 /* The navigation menu links */
 .sidenav a {
   padding: 8px 8px 8px 32px;
@@ -44,10 +47,12 @@
   display: block;
   transition: 0.3s;
 }
+
 /* When you mouse over the navigation links, change their color */
 .sidenav a:hover {
   color: #f1f1f1;
 }
+
 /* Position and style the close button (top right corner) */
 .sidenav .closebtn {
   position: absolute;
@@ -56,22 +61,27 @@
   font-size: 36px;
   margin-left: 50px;
 }
+
 /* Style page content - use this if you want to push the page content to the right when you open the side navigation */
 #main {
   transition: margin-left .5s;
   padding: 20px;
 }
+
 .parallax { 
   /* The image used */
-  background-image: url("Whispy.JPG");
+  background-image: url("resources/parallax.jpg");
+
   /* Set a specific height */
   height: 800px; 
+
   /* Create the parallax scrolling effect */
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
 }
+
 .footer {
   padding: 10px; /* Some padding */
   text-align: center; /* Center text*/
@@ -83,6 +93,7 @@
  font-weight: lighter;
  color:#818181;
 }
+
 .font{
   padding: 20px;
   text-align: center;
@@ -94,6 +105,7 @@
   font-size:50px;
   color: #818181;
 }
+
 </style>
 
 <script>
@@ -101,6 +113,7 @@ function openNav() {
   document.getElementById("mySidenav").style.width = "250px";
   document.getElementById("main").style.marginLeft = "250px";
 }
+
 /* Set the width of the side navigation to 0 and the left margin of the page content to 0 */
 function closeNav() {
   document.getElementById("mySidenav").style.width = "0";
@@ -110,12 +123,10 @@ function closeNav() {
 
 <div id="mySidenav" class="sidenav">
   <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-  <a href="#">Home</a>
-  <a href="http://localhost:8080/Mission.html#">Mission</a>
-  <a href="#">Cat Pictures</a>
-  <a href="#">Lo-Fi</a>
-  <a href="#">Contribute</a>
-  <a href="#">About</a>
+  <a href="http://localhost:8080/Home.html#">Home</a>
+  <a href="http://localhost:8080/Mission.html#">More Information</a>
+  <a href="http://localhost:8080/Map.html#">Map</a>
+    <a href="http://localhost:8080/Testimonial.html#">Testimonial</a>
 </div>
 
 <!-- Use any element to open the sidenav -->
